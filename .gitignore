@@ -1,0 +1,8 @@
+*.exe
+tempCodeRunnerFile.cpp
+tmp/
+.cph/
+input.txt
+output.txt
+in
+out
