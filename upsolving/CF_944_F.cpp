@@ -7,15 +7,19 @@ int main(){
     int t;
     cin >> t;
     while(t--){
-        ll x=0,r,y,ans=0;
+        ll x=-1,r,ans=0;
         cin >> r;
+        ll y=r;
         ll distance;
         while(++x<=r){
-            y=r;
             while(x*x+y*y>=(r+1)*(r+1)) y--;
-            while(x*x+y*y>=r*r && y>0){ans++; y--;}
+            while(x*x+y*y>=r*r && y>0){
+                ans++;
+                y--;
+            }
+            y++;
         }
-        cout << 4+4*ans << '\n';
+        cout << 4*ans << '\n';
     }
     return 0;
 }
