@@ -61,7 +61,7 @@ int main(){
 //     else pq.push({a[0]-t+1,a[0]});
 //     for(int i=1;i<n;i++){
 //         pair<int,int> s=pq.top();
-//         if(a[i]-t+1<s.second){
+//         if(a[i]-t+1<s.second+1){
 //             ans++;
 //             if(a[i]<t) pq.push({1,t});
 //             else pq.push({a[i]-t+1,a[i]});
