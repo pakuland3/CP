@@ -58,10 +58,7 @@ bool f_wins[100001];
 bool vis[100001];
 
 void solve(int node){
-    if(graph[node].size()==1){
-        f_wins[node]=0;
-        return;
-    }
+    if(graph[node].size()==1) return;
     for(int i=0;i<graph[node].size();i++){
         int nx=graph[node][i];
         if(vis[nx]) continue;
