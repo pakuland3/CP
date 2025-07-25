@@ -10,3 +10,4 @@ output.*
 input.*
 *.out
 *.in
+/.vscode
